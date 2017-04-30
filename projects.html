@@ -3,49 +3,15 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Create A Simple Responsive Portfolio Page with Filtering and Hover Effect</title>
+	<title>Projects - Kerem Bakir</title>
 	<meta name="description" content="In this tutorial, I'm going to show you how to create portfolio page with filtering and also hover effect for each of your project. We will be using a CSS3 and jQuery filter & sort plugin called MixItUp.">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<link rel="stylesheet" href="includes/css/normalize.css">
-	<link rel="stylesheet" href="includes/css/layout.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
-	<![endif]-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="includes/js/jquery.mixitup.min.js"></script>
-
-	<script type="text/javascript">
-	$(function () {
-
-		var filterList = {
-
-			init: function () {
-
-				// MixItUp plugin
-				// http://mixitup.io
-				$('#portfoliolist').mixItUp({
-  				selectors: {
-    			  target: '.portfolio',
-    			  filter: '.filter'
-    		  },
-    		  load: {
-      		  filter: '.app'
-      		}
-				});
-
-			}
-
-		};
-
-		// Run the show!
-		filterList.init();
-
-
-	});
-	</script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="includes/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="includes/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="includes/css/normalize.css" type="text/css" rel="stylesheet">
+	<link href="includes/css/layout.css" type= "text/css" rel="stylesheet">
 
 </head>
 <body>
@@ -56,10 +22,10 @@
 		<ul id="filters" class="clearfix">
 			<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
 			<li><span class="filter" data-filter=".app">App</span></li>
-			<li><span class="filter" data-filter=".card">Card</span></li>
-			<li><span class="filter" data-filter=".icon">Icon</span></li>
+			<li><span class="filter" data-filter=".card">VR</span></li>
+			<li><span class="filter" data-filter=".icon">Video</span></li>
 			<li><span class="filter" data-filter=".logo">Logo</span></li>
-			<li><span class="filter" data-filter=".web">Web</span></li>
+			<li><span class="filter" data-filter=".web">Websites</span></li>
 		</ul>
 
 		<div id="portfoliolist">
@@ -69,7 +35,7 @@
 					<img src="includes/img/portfolios/logo/5.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Bird Document</a>
+							<a class="text-title">Libris Gouden Boek</a>
 							<span class="text-category">Logo</span>
 						</div>
 						<div class="label-bg"></div>
@@ -82,7 +48,7 @@
 					<img src="includes/img/portfolios/app/1.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Visual Infography</a>
+							<a class="text-title">Bakkie</a>
 							<span class="text-category">APP</span>
 						</div>
 						<div class="label-bg"></div>
@@ -95,7 +61,7 @@
 					<img src="includes/img/portfolios/web/4.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Sonor's Design</a>
+							<a class="text-title">Webpage</a>
 							<span class="text-category">Web design</span>
 						</div>
 						<div class="label-bg"></div>
@@ -108,8 +74,8 @@
 					<img src="includes/img/portfolios/card/1.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Typography Company</a>
-							<span class="text-category">Business card</span>
+							<a class="text-title">VR</a>
+							<span class="text-category">VR</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -121,7 +87,7 @@
 					<img src="includes/img/portfolios/app/3.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Weatherette</a>
+							<a class="text-title">App</a>
 							<span class="text-category">APP</span>
 						</div>
 						<div class="label-bg"></div>
@@ -134,8 +100,8 @@
 					<img src="includes/img/portfolios/card/4.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">BMF</a>
-							<span class="text-category">Business card</span>
+							<a class="text-title">VR</a>
+							<span class="text-category">VR</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -147,8 +113,8 @@
 					<img src="includes/img/portfolios/card/5.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Techlion</a>
-							<span class="text-category">Business card</span>
+							<a class="text-title">VR</a>
+							<span class="text-category">VR</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -160,7 +126,7 @@
 					<img src="includes/img/portfolios/logo/1.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">KittyPic</a>
+							<a class="text-title">Libris Boeken</a>
 							<span class="text-category">Logo</span>
 						</div>
 						<div class="label-bg"></div>
@@ -173,7 +139,7 @@
 					<img src="includes/img/portfolios/app/2.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Graph Plotting</a>
+							<a class="text-title">App</a>
 							<span class="text-category">APP</span>
 						</div>
 						<div class="label-bg"></div>
@@ -186,8 +152,8 @@
 					<img src="includes/img/portfolios/card/2.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">QR Quick Response</a>
-							<span class="text-category">Business card</span>
+							<a class="text-title">VR</a>
+							<span class="text-category">VR</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -199,7 +165,7 @@
 					<img src="includes/img/portfolios/logo/6.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Mobi Sock</a>
+							<a class="text-title">Logo</a>
 							<span class="text-category">Logo</span>
 						</div>
 						<div class="label-bg"></div>
@@ -212,7 +178,7 @@
 					<img src="includes/img/portfolios/logo/7.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Village Community Church</a>
+							<a class="text-title">Logo</a>
 							<span class="text-category">Logo</span>
 						</div>
 						<div class="label-bg"></div>
@@ -225,8 +191,8 @@
 					<img src="includes/img/portfolios/icon/4.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Domino's Pizza</a>
-							<span class="text-category">Icon</span>
+							<a class="text-title">Video</a>
+							<span class="text-category">Video</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -238,7 +204,7 @@
 					<img src="includes/img/portfolios/web/3.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Backend Admin</a>
+							<a class="text-title">Webpage</a>
 							<span class="text-category">Web design</span>
 						</div>
 						<div class="label-bg"></div>
@@ -251,8 +217,8 @@
 					<img src="includes/img/portfolios/icon/1.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Instagram</a>
-							<span class="text-category">Icon</span>
+							<a class="text-title">Writer's Block</a>
+							<span class="text-category">Video</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -264,7 +230,7 @@
 					<img src="includes/img/portfolios/web/2.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Student Guide</a>
+							<a class="text-title">Webpage</a>
 							<span class="text-category">Web design</span>
 						</div>
 						<div class="label-bg"></div>
@@ -277,8 +243,8 @@
 					<img src="includes/img/portfolios/icon/2.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Scoccer</a>
-							<span class="text-category">Icon</span>
+							<a class="text-title">Video</a>
+							<span class="text-category">Video</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -290,8 +256,8 @@
 					<img src="includes/img/portfolios/icon/5.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">3D Map</a>
-							<span class="text-category">Icon</span>
+							<a class="text-title">Video</a>
+							<span class="text-category">Video</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -303,7 +269,7 @@
 					<img src="includes/img/portfolios/web/1.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Note</a>
+							<a class="text-title">Stamp Hub</a>
 							<span class="text-category">Web design</span>
 						</div>
 						<div class="label-bg"></div>
@@ -316,7 +282,7 @@
 					<img src="includes/img/portfolios/logo/3.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Native Designers</a>
+							<a class="text-title">Libris Blok</a>
 							<span class="text-category">Logo</span>
 						</div>
 						<div class="label-bg"></div>
@@ -329,7 +295,7 @@
 					<img src="includes/img/portfolios/logo/4.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Bookworm</a>
+							<a class="text-title">Logo</a>
 							<span class="text-category">Logo</span>
 						</div>
 						<div class="label-bg"></div>
@@ -342,8 +308,8 @@
 					<img src="includes/img/portfolios/icon/3.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Sandwich</a>
-							<span class="text-category">Icon</span>
+							<a class="text-title">Video</a>
+							<span class="text-category">Video</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -355,8 +321,8 @@
 					<img src="includes/img/portfolios/card/3.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Reality</a>
-							<span class="text-category">Business card</span>
+							<a class="text-title">VR</a>
+							<span class="text-category">VR</span>
 						</div>
 						<div class="label-bg"></div>
 					</div>
@@ -368,7 +334,7 @@
 					<img src="includes/img/portfolios/logo/2.jpg" alt="" />
 					<div class="label">
 						<div class="label-text">
-							<a class="text-title">Speciallisterne</a>
+							<a class="text-title">Logo</a>
 							<span class="text-category">Logo</span>
 						</div>
 						<div class="label-bg"></div>
@@ -379,7 +345,42 @@
 
 		</div>
 
-	</div><!-- container -->
+	</div>
 
+	<div class="row center">
+		<a href="index.html" id="download-button" class="btn-large waves-effect waves-teal lighten-5">Back to Portfolio</a>
+	</div>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="includes/js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+
+		var filterList = {
+
+			init: function () {
+
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+					selectors: {
+						target: '.portfolio',
+						filter: '.filter'
+					},
+					load: {
+						filter: '.app'
+					}
+				});
+
+			}
+
+		};
+
+		// Run the show!
+		filterList.init();
+
+
+	});
+	</script>
 </body>
 </html>
