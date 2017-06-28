@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Projects - Kerem Bakir</title>
+	<meta name="description" content="In this tutorial, I'm going to show you how to create portfolio page with filtering and also hover effect for each of your project. We will be using a CSS3 and jQuery filter & sort plugin called MixItUp.">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="includes/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="includes/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="includes/css/normalize.css" type="text/css" rel="stylesheet">
+	<link href="includes/css/layout.css" type= "text/css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="includes/img/kbicon.png">
+</head>
+<body>
+
+
+	<div class="container">
+
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
+			<li><span class="filter" data-filter=".app">App</span></li>
+			<li><span class="filter" data-filter=".card">VR</span></li>
+			<li><span class="filter" data-filter=".icon">Video</span></li>
+			<li><span class="filter" data-filter=".logo">Logo</span></li>
+			<li><span class="filter" data-filter=".web">Websites</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/logo/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Libris Gouden Boek</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/app/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bakkie</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/web/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Webpage</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/card/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">VR</a>
+							<span class="text-category">VR</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/app/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">App</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/card/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">VR</a>
+							<span class="text-category">VR</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/card/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">VR</a>
+							<span class="text-category">VR</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/logo/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Libris Boeken</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/app/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">App</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/card/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">VR</a>
+							<span class="text-category">VR</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/logo/6.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Logo</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/logo/7.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Logo</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/icon/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Video</a>
+							<span class="text-category">Video</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/web/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Webpage</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/icon/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Writer's Block</a>
+							<span class="text-category">Video</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/web/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Webpage</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/icon/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Video</a>
+							<span class="text-category">Video</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/icon/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Video</a>
+							<span class="text-category">Video</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/web/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Stamp Hub</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/logo/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Libris Blok</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/logo/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Logo</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/icon/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Video</a>
+							<span class="text-category">Video</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/card/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">VR</a>
+							<span class="text-category">VR</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio logo" data-cat="logo">
+				<div class="portfolio-wrapper">
+					<img src="includes/img/portfolios/logo/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Logo</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+	<div class="row center">
+		<a href="index.html" id="download-button" class="btn-large waves-effect waves-teal lighten-5">Back to Portfolio</a>
+	</div>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="includes/js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+
+		var filterList = {
+
+			init: function () {
+
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+					selectors: {
+						target: '.portfolio',
+						filter: '.filter'
+					},
+					load: {
+						filter: '.app'
+					}
+				});
+
+			}
+
+		};
+
+		// Run the show!
+		filterList.init();
+
+
+	});
+	</script>
+</body>
+</html>
