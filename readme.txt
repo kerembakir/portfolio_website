@@ -6,7 +6,4 @@ The website consists of two parts, a ‘Contact/About’ page and a ‘Portfolio
 
 Technologies used:
 
-Besides HTML, CSS and Javascript I used the Materialize framework for the Contact/About page and for the Portfolio page I used a plugin called Normalize.
-
-
-
+Besides HTML, CSS and Javascript I used Materialize for the Contact/About page and for the Portfolio page I used a plugin called Normalize.
